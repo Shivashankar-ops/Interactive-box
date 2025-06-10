@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="interactive_box.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Bundle & Save</h2>
+
+    <!-- 1 Pair Option -->
+    <div class="option" data-pairs="1" data-price="195">
+      <input type="radio" name="bundle" id="pair1">
+      <label for="pair1">
+        <div>
+          <strong>1 Pair</strong><br>DKK 195.00
+        </div>
+        <span>50% OFF</span>
+      </label>
+            <div class="dropdowns">
+        <div>
+          <label>#1</label>
+          <select><option>M</option><option>S</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+        <div>
+          <label>#2</label>
+          <select><option>M</option><option>S</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 Pair Option -->
+    <div class="option" data-pairs="2" data-price="345">
+      <input type="radio" name="bundle" id="pair2">
+      <label for="pair2">
+        <div>
+          <strong>2 Pair</strong><br>DKK 345.00
+        </div>
+        <span class="highlight">Most Popular<br>40% OFF</span>
+      </label>
+            <div class="dropdowns">
+        <div>
+          <label>#1</label>
+          <select><option>M</option><option>S</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+        <div>
+          <label>#2</label>
+          <select><option>M</option><option>S</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3 Pair Option -->
+    <div class="option" data-pairs="3" data-price="528">
+      <input type="radio" name="bundle" id="pair3" checked>
+      <label for="pair3">
+        <div>
+          <strong>3 Pair</strong><br>DKK 528.00
+        </div>
+        <span>60% OFF</span>
+      </label>
+
+      <div class="dropdowns">
+        <div>
+          <label>#1</label>
+          <select><option>M</option><option>S</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+        <div>
+          <label>#2</label>
+          <select><option>M</option><option>S</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Blue</option><option>Red</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <span class="shipping">Free 2 Day Shipping</span>
+      <span>Total : <strong id="total">DKK 528.00</strong></span>
+    </div>
+
+    <!-- Button -->
+    <button class="cart-btn">+ Add to Cart</button>
+  </div>
+
+  <script src="interactive.js"></script>
+</body>
+</html>
