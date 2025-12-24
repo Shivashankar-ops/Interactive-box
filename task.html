@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="task_style.css">
+  <script src="task.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="sidebar">
+    <h2>User Panel</h2>
+    <a href="#" onclick="showSection('dashboard')">Dashboard</a>
+    <a href="#" onclick="showSection('profile')">Manage Profile</a>
+    <a href="#" onclick="showSection('password')">Change Password</a>
+    <a href="#" onclick="showSection('invoice')">Manage Invoice</a>
+    <a href="#" onclick="showSection('orders')">Manage Orders</a>
+  </div>
+
+  <div class="content">
+    
+    <!-- Dashboard -->
+    <div id="dashboard" class="section">
+      <h3>Dashboard</h3>
+      <p>Welcome to your dashboard.</p>
+    </div>
+
+    <!-- Manage Profile -->
+    <div id="profile" class="section">
+      <h3>Manage Profile</h3>
+
+      <h4>Personal Details</h4>
+      <p><b>Name:</b> Shiva Shankar</p>
+      <p><b>Email:</b> shivashankarbingi7@gmail.com</p>
+      <p><b>Phone:</b> 9876543210</p>
+
+      <h4>Educational Details</h4>
+      <p><b>Degree:</b> B.Tech</p>
+      <p><b>Specialization:</b> Computer Science</p>
+      <p><b>Year:</b> 2024</p>
+    </div>
+
+    <!-- Change Password -->
+    <div id="password" class="section">
+      <h3>Change Password</h3>
+      <input type="password" placeholder="Current Password">
+      <input type="password" placeholder="New Password">
+      <input type="password" placeholder="Confirm New Password">
+      <button>Update Password</button>
+    </div>
+
+    <!-- Manage Invoice -->
+    <div id="invoice" class="section">
+      <h3>Manage Invoice</h3>
+      <table>
+        <tr>
+          <th>Invoice ID</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>INV001</td>
+          <td>10-Dec-2025</td>
+          <td>₹5,000</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>INV002</td>
+          <td>15-Dec-2025</td>
+          <td>₹3,200</td>
+          <td><button>View</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Manage Orders -->
+    <div id="orders" class="section">
+      <h3>Manage Orders</h3>
+      <table>
+        <tr>
+          <th>Order ID</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>ORD101</td>
+          <td>12-Dec-2025</td>
+          <td>Delivered</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>ORD102</td>
+          <td>18-Dec-2025</td>
+          <td>Pending</td>
+          <td><button>View</button></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>
